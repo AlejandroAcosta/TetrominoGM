@@ -11,9 +11,19 @@
     <sprite>sprites\spr_t_block</sprite>
     <sprite>sprites\spr_z_block</sprite>
     <sprite>sprites\spr_s_block</sprite>
+    <sprite>sprites\spr_sub_block</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\ti_game</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_block</object>
+  </objects>
+  <timelines name="timelines"/>
+  <rooms name="rooms">
+    <room>rooms\rm_game</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
