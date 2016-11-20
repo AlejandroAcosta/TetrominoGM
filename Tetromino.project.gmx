@@ -12,6 +12,7 @@
     <sprite>sprites\spr_z_block</sprite>
     <sprite>sprites\spr_s_block</sprite>
     <sprite>sprites\spr_sub_block</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ti_game</background>
@@ -26,6 +27,8 @@
     <object>objects\obj_active_block</object>
     <object>objects\obj_standby_block</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_placed_blocks</object>
+    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
