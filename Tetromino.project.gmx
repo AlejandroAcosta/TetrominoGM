@@ -17,10 +17,16 @@
     <background>background\ti_game</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_select_block_sprite.gml</script>
+    <script>scripts\scr_get_input.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_block</object>
+    <object>objects\obj_active_block</object>
+    <object>objects\obj_standby_block</object>
+    <object>objects\obj_control</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
   </rooms>

@@ -6,7 +6,7 @@
   <vsnap>8</vsnap>
   <hsnap>8</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
@@ -41,29 +41,28 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_standby_block" x="136" y="136" name="inst_1AA977E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control" x="120" y="32" name="inst_F332F840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles>
     <tile bgName="ti_game" x="0" y="0" w="8" h="8" xo="0" yo="0" id="10000001" name="inst_69121993" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="152" w="8" h="8" xo="8" yo="0" id="10000003" name="inst_1D09E436" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="128" y="152" w="8" h="8" xo="8" yo="8" id="10000004" name="inst_980EAC6B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="136" y="152" w="8" h="8" xo="8" yo="8" id="10000005" name="inst_D2973F03" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="144" y="152" w="8" h="8" xo="8" yo="8" id="10000006" name="inst_F0A21A58" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="152" y="152" w="8" h="8" xo="16" yo="0" id="10000007" name="inst_3C8DCA1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="144" w="8" h="8" xo="16" yo="8" id="10000008" name="inst_CE585922" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="136" w="8" h="8" xo="16" yo="8" id="10000009" name="inst_B1AB4FA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="152" y="144" w="8" h="8" xo="24" yo="8" id="10000010" name="inst_AB15EACC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="152" y="136" w="8" h="8" xo="24" yo="8" id="10000011" name="inst_A5374A8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="152" y="128" w="8" h="8" xo="24" yo="8" id="10000012" name="inst_F3DD52F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="128" w="8" h="8" xo="16" yo="8" id="10000013" name="inst_B3621AC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="128" y="128" w="8" h="8" xo="0" yo="8" id="10000014" name="inst_9F5BFEA6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="128" y="136" w="8" h="8" xo="0" yo="8" id="10000015" name="inst_72186C35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="128" y="144" w="8" h="8" xo="0" yo="8" id="10000016" name="inst_F27EF98C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -73,11 +72,6 @@
     <tile bgName="ti_game" x="136" y="136" w="8" h="8" xo="0" yo="8" id="10000020" name="inst_73D98F6A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="136" y="128" w="8" h="8" xo="0" yo="8" id="10000021" name="inst_D8386827" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="144" y="128" w="8" h="8" xo="0" yo="8" id="10000022" name="inst_918ADEDD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="120" w="8" h="8" xo="32" yo="0" id="10000023" name="inst_8F76E499" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="152" y="120" w="8" h="8" xo="24" yo="0" id="10000024" name="inst_DC4E6EFB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="128" y="120" w="8" h="8" xo="32" yo="8" id="10000025" name="inst_1E62CE34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="136" y="120" w="8" h="8" xo="32" yo="8" id="10000026" name="inst_4B388308" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="144" y="120" w="8" h="8" xo="32" yo="8" id="10000027" name="inst_6AE4AC69" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="0" y="8" w="8" h="8" xo="0" yo="0" id="10000048" name="inst_AEC4C108" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="0" y="16" w="8" h="8" xo="0" yo="0" id="10000049" name="inst_A54B759A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="0" y="24" w="8" h="8" xo="0" yo="0" id="10000050" name="inst_9B98A999" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -117,21 +111,10 @@
     <tile bgName="ti_game" x="104" y="136" w="8" h="8" xo="0" yo="0" id="10000095" name="inst_B762FC20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="104" y="144" w="8" h="8" xo="0" yo="0" id="10000096" name="inst_A2CDB301" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="104" y="152" w="8" h="8" xo="0" yo="0" id="10000097" name="inst_347D25BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="144" w="8" h="8" xo="40" yo="0" id="10000100" name="inst_1948345F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="152" w="8" h="8" xo="40" yo="0" id="10000101" name="inst_38CFCEB3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="136" w="8" h="8" xo="40" yo="0" id="10000102" name="inst_AC35BA5D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="128" w="8" h="8" xo="40" yo="0" id="10000103" name="inst_AA543885" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="120" w="8" h="8" xo="40" yo="0" id="10000104" name="inst_1F7478AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="112" y="112" w="8" h="8" xo="40" yo="0" id="10000105" name="inst_4AFD4B30" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="112" y="32" w="8" h="8" xo="40" yo="0" id="10000110" name="inst_4511AD04" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="112" y="40" w="8" h="8" xo="40" yo="0" id="10000111" name="inst_C6D56F28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="112" y="48" w="8" h="8" xo="40" yo="0" id="10000112" name="inst_163E4ED0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="112" y="56" w="8" h="8" xo="40" yo="0" id="10000113" name="inst_FFB576C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="120" y="112" w="8" h="8" xo="40" yo="0" id="10000120" name="inst_01F0581D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="128" y="112" w="8" h="8" xo="40" yo="0" id="10000121" name="inst_FDBAC500" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="136" y="112" w="8" h="8" xo="40" yo="0" id="10000122" name="inst_588352AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="144" y="112" w="8" h="8" xo="40" yo="0" id="10000123" name="inst_791EB116" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="ti_game" x="152" y="112" w="8" h="8" xo="40" yo="0" id="10000124" name="inst_9C372932" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="112" y="104" w="8" h="8" xo="8" yo="0" id="10000126" name="inst_BD2F256C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="120" y="104" w="8" h="8" xo="8" yo="8" id="10000131" name="inst_DD58CA70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="128" y="104" w="8" h="8" xo="8" yo="8" id="10000132" name="inst_2BA8B2FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -232,6 +215,26 @@
     <tile bgName="ti_game" x="96" y="136" w="8" h="8" xo="0" yo="0" id="10000249" name="inst_ED8CBD0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="96" y="144" w="8" h="8" xo="0" yo="0" id="10000250" name="inst_D486884F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="96" y="152" w="8" h="8" xo="0" yo="0" id="10000251" name="inst_C0F7B7F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="128" w="8" h="8" xo="16" yo="8" id="10000252" name="inst_14A8A3C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="136" w="8" h="8" xo="16" yo="8" id="10000253" name="inst_8D6714C3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="144" w="8" h="8" xo="16" yo="8" id="10000254" name="inst_99CF2B05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="128" w="8" h="8" xo="0" yo="8" id="10000258" name="inst_B6CB7655" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="136" w="8" h="8" xo="0" yo="8" id="10000259" name="inst_80F5E055" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="144" w="8" h="8" xo="0" yo="8" id="10000260" name="inst_74E89674" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="152" w="8" h="8" xo="8" yo="8" id="10000261" name="inst_E1B5DB54" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="152" w="8" h="8" xo="8" yo="0" id="10000262" name="inst_9E2E2B18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="120" w="8" h="8" xo="0" yo="8" id="10000263" name="inst_3B2C547E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="128" y="120" w="8" h="8" xo="0" yo="8" id="10000264" name="inst_459996C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="136" y="120" w="8" h="8" xo="0" yo="8" id="10000265" name="inst_6769E5AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="144" y="120" w="8" h="8" xo="0" yo="8" id="10000266" name="inst_9E538405" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="120" w="8" h="8" xo="16" yo="8" id="10000267" name="inst_02285A4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="152" y="120" w="8" h="8" xo="24" yo="8" id="10000268" name="inst_CA5AE12F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="120" y="112" w="8" h="8" xo="32" yo="8" id="10000269" name="inst_F3A946ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="128" y="112" w="8" h="8" xo="32" yo="8" id="10000270" name="inst_A1493198" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="136" y="112" w="8" h="8" xo="32" yo="8" id="10000271" name="inst_84CDC4B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="144" y="112" w="8" h="8" xo="32" yo="8" id="10000272" name="inst_8BE801DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="112" y="112" w="8" h="8" xo="32" yo="0" id="10000273" name="inst_603E856A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="152" y="112" w="8" h="8" xo="24" yo="0" id="10000274" name="inst_45A66279" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
