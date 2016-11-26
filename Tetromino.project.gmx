@@ -27,7 +27,7 @@
     <object>objects\obj_active_block</object>
     <object>objects\obj_standby_block</object>
     <object>objects\obj_control</object>
-    <object>objects\obj_placed_blocks</object>
+    <object>objects\obj_placed_block</object>
     <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">

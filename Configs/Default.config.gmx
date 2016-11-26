@@ -651,17 +651,18 @@
     <option_xbone_title_id>1234ABCD</option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="10">
+    <constants number="11">
       <constant name="L_BLOCK">0</constant>
       <constant name="O_BLOCK">1</constant>
       <constant name="T_BLOCK">2</constant>
       <constant name="Z_BLOCK">3</constant>
       <constant name="S_BLOCK">4</constant>
-      <constant name="BLOCK_X_ORIGIN">64</constant>
-      <constant name="BLOCK_Y_ORIGIN">16</constant>
+      <constant name="BLOCK_X_ORIGIN">256</constant>
+      <constant name="BLOCK_Y_ORIGIN">0</constant>
       <constant name="MOVEMENT_SPEED">30</constant>
       <constant name="LEVEL_WIDTH">10</constant>
       <constant name="LEVEL_HEIGHT">20</constant>
+      <constant name="BLOCK_WIDTH">32</constant>
     </constants>
   </ConfigConstants>
 </Config>
