@@ -54,23 +54,21 @@ scr_get_input();
 scr_get_input();
 
 if (!instance_exists(obj_active_block)) {
-   var block = instance_create(BLOCK_X_ORIGIN, BLOCK_Y_ORIGIN, obj_active_block);
    with (obj_standby_block) {
-        block.selected_sprite_index = selected_sprite_index;
-        block.sprite_index = sprite_index;
+        var block = scr_create_block(selected_sprite_index, sprite_index);
         get_next = true;
    }
 }
 
 if (instance_exists(obj_active_block)) {
     if (right_key) {
-       obj_active_block.x += MOVEMENT_SPEED/room_speed;
+       obj_active_block.x += MOVEMENT_SPEED;
     }
     if (left_key) {
-       obj_active_block.x -= MOVEMENT_SPEED/room_speed;
+       obj_active_block.x -= MOVEMENT_SPEED;
     }
     if (down_key) {
-       obj_active_block.y += MOVEMENT_SPEED/room_speed;
+       obj_active_block.y += MOVEMENT_SPEED;
     }
     if (rotate_key) {
        obj_active_block.image_angle += 90;

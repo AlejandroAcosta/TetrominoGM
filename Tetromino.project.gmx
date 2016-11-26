@@ -23,6 +23,7 @@
   <scripts name="scripts">
     <script>scripts\scr_select_block_sprite.gml</script>
     <script>scripts\scr_get_input.gml</script>
+    <script>scripts\scr_create_block.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_block</object>

@@ -28,7 +28,7 @@
             <string>/// Create the standby block
 event_inherited();
 
-selected_sprite_index = irandom_range(L_BLOCK, S_BLOCK);
+selected_sprite_index = irandom_range(I_BLOCK, L_BLOCK);
 sprite_index = scr_select_block_sprite(selected_sprite_index);
 get_next = false;
 </string>
@@ -56,7 +56,7 @@ get_next = false;
             <string>/// Check if the block has been taken
 
 if (get_next) {
-   selected_sprite_index = irandom_range(L_BLOCK, S_BLOCK);
+   selected_sprite_index = irandom_range(I_BLOCK, L_BLOCK);
    sprite_index = scr_select_block_sprite(selected_sprite_index);
    get_next = false;
 }
