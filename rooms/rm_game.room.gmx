@@ -292,6 +292,16 @@
     <tile bgName="ti_game" x="544" y="96" w="32" h="32" xo="0" yo="64" id="10000509" name="inst_8E7EBC8D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="544" y="64" w="32" h="32" xo="0" yo="64" id="10000510" name="inst_193CE82B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ti_game" x="544" y="32" w="32" h="32" xo="0" yo="64" id="10000511" name="inst_A1016DC8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="64" y="64" w="32" h="32" xo="0" yo="64" id="10000522" name="inst_091C37FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="96" y="96" w="32" h="32" xo="0" yo="64" id="10000523" name="inst_D55FC79E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="128" y="128" w="32" h="32" xo="0" yo="64" id="10000524" name="inst_4CCC1C36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="160" y="160" w="32" h="32" xo="0" yo="64" id="10000525" name="inst_A15F00B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="192" y="192" w="32" h="32" xo="0" yo="64" id="10000526" name="inst_BBD88854" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="224" y="224" w="32" h="32" xo="0" yo="64" id="10000527" name="inst_09A12586" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="256" y="256" w="32" h="32" xo="0" yo="64" id="10000528" name="inst_A4FFF0BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="288" y="288" w="32" h="32" xo="0" yo="64" id="10000529" name="inst_32DF36FF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="320" y="320" w="32" h="32" xo="0" yo="64" id="10000530" name="inst_02E0DCCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ti_game" x="352" y="352" w="32" h="32" xo="0" yo="64" id="10000531" name="inst_C7027983" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

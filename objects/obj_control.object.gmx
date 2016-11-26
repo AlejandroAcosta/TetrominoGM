@@ -72,6 +72,9 @@ if (instance_exists(obj_active_block)) {
     if (down_key) {
        obj_active_block.y += MOVEMENT_SPEED/room_speed;
     }
+    if (rotate_key) {
+       obj_active_block.image_angle += 90;
+    }
 }
 </string>
           </argument>

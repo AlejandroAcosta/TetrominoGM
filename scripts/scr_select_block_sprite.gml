@@ -2,6 +2,12 @@
 var sprite_idx = argument0;
 var sprite;
 switch (sprite_idx) {
+       case I_BLOCK:
+            sprite = spr_i_block;
+            break;
+       case J_BLOCK:
+            sprite = spr_j_block;
+            break;
        case L_BLOCK:
             sprite = spr_l_block;
             break;
