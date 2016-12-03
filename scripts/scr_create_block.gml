@@ -7,6 +7,7 @@ var y_origin = BLOCK_Y_ORIGIN * BLOCK_HEIGHT;
 
 switch(selected_block) {
     case O_BLOCK:
+    case I_BLOCK:
         break;
     default:
         x_origin += BLOCK_WIDTH/2;
