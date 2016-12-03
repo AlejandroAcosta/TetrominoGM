@@ -71,7 +71,7 @@ if (instance_exists(obj_active_block)) {
        obj_active_block.y += MOVEMENT_SPEED;
     }
     if (rotate_key) {
-       obj_active_block.image_angle += 90;
+       obj_active_block.image_index += 1;
     }
 }
 </string>
