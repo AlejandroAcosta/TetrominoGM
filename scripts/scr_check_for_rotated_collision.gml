@@ -8,7 +8,7 @@ var will_collide = 0;
 with (block) {
      image_index += 1;
 
-    if (place_meeting(x, y, obj_wall)) {
+    if (place_meeting(x, y, obj_wall) || place_meeting(x, y, obj_placed_block)) {
        will_collide = 1;
     }
     image_index -= 1;

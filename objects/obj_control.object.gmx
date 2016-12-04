@@ -61,20 +61,14 @@ if (!instance_exists(obj_active_block)) {
 }
 
 if (instance_exists(obj_active_block)) {
-    if (right_key) {
-       obj_active_block.x += MOVEMENT_SPEED;
-    }
-    if (left_key) {
-       obj_active_block.x -= MOVEMENT_SPEED;
-    }
-    if (down_key) {
-       obj_active_block.y += MOVEMENT_SPEED;
-    }
-    if (rotate_key) {
-       if (!scr_check_for_rotated_collision(obj_active_block)) {
-          obj_active_block.image_index += 1;
-       }
-    }
+    scr_move_block(self, obj_active_block);
+
+    // Check if we've reached the bottom of the map
+    var level_height = LEVEL_HEIGHT * BLOCK_HEIGHT;
+    var level_width = LEVEL_WIDTH * BLOCK_WIDTH;
+    if (collision_line(0, level_height, level_width, level_height, obj_active_block, false, false)) {
+       scr_place_block(obj_active_block);
+    } 
 }
 </string>
           </argument>
