@@ -17,7 +17,7 @@ with (block) {
     }
     if (control.down_key) {
        // Trigger movement alarm to trigger on next frame
-       with (control) {
+       with (block) {
             alarm[0] = 1;
        }
     }

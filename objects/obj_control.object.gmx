@@ -28,6 +28,13 @@
             <string>/// Instantiate control object
 
 scr_get_input();
+
+// Initialize block positions
+for( var i = LEVEL_WIDTH-1; i &gt;= 0; i--) {
+     for (var j = LEVEL_HEIGHT-1; j &gt;= 0; j--) {
+         blocks[i, j] = noone;
+     }
+}
 </string>
           </argument>
         </arguments>
@@ -66,8 +73,20 @@ if (instance_exists(obj_active_block)) {
     // Check if we've reached the bottom of the map
     var level_height = LEVEL_HEIGHT * BLOCK_HEIGHT;
     var level_width = LEVEL_WIDTH * BLOCK_WIDTH;
-    if (collision_line(0, level_height, level_width, level_height, obj_active_block, false, false)) {
-       scr_place_block(obj_active_block);
+
+    var collided_with_bottom = collision_line(
+            0, level_height,
+            level_width, level_height,
+            obj_active_block, false, false
+    );
+
+    var collided_with_placed_block;
+    with (obj_active_block) {
+         collided_with_placed_block = place_meeting(x, y, obj_placed_block);
+    }
+
+    if (collided_with_bottom || collided_with_placed_block) {
+       scr_place_block(obj_active_block, blocks);
     } 
 }
 </string>

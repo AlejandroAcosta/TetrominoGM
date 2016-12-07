@@ -651,7 +651,7 @@
     <option_xbone_title_id>1234ABCD</option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="15">
+    <constants number="16">
       <constant name="I_BLOCK">0</constant>
       <constant name="O_BLOCK">1</constant>
       <constant name="T_BLOCK">2</constant>
@@ -667,6 +667,7 @@
       <constant name="BLOCK_WIDTH">32</constant>
       <constant name="BLOCK_HEIGHT">32</constant>
       <constant name="DEBUG_MODE">1</constant>
+      <constant name="LEFT_WALL">2</constant>
     </constants>
   </ConfigConstants>
 </Config>
