@@ -29,11 +29,6 @@
 
 event_inherited();
 
-for( var i = LEVEL_WIDTH-1; i &gt;= 0; i--) {
-     for (var j = LEVEL_HEIGHT-1; j &gt;= 0; j--) {
-         blocks[i, j] = -1;
-     }
-}
 </string>
           </argument>
         </arguments>
@@ -58,37 +53,6 @@ for( var i = LEVEL_WIDTH-1; i &gt;= 0; i--) {
             <kind>1</kind>
             <string>/// Check for what blocks to render
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw the placed blocks
-
-for( var i = LEVEL_WIDTH-1; i &gt;= 0; i--) {
-     for (var j = LEVEL_HEIGHT-1; j &gt;= 0; j--) {
-         if (blocks[i, j] != -1) {
-            draw_sprite(spr_sub_block, blocks[i, j], i*8, j*8);
-         }
-     }
-}
 </string>
           </argument>
         </arguments>

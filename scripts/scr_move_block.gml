@@ -16,7 +16,10 @@ with (block) {
        x -= MOVEMENT_SPEED;
     }
     if (control.down_key) {
-       y += MOVEMENT_SPEED;
+       // Trigger movement alarm to trigger on next frame
+       with (control) {
+            alarm[0] = 1;
+       }
     }
     if (control.rotate_key) {
        if (!scr_check_for_rotated_collision(block)) {

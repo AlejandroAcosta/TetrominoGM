@@ -9,6 +9,13 @@ switch(selected_block) {
     case O_BLOCK:
     case I_BLOCK:
         break;
+    case T_BLOCK:
+    case L_BLOCK:
+    case S_BLOCK:
+    case Z_BLOCK:
+         x_origin += BLOCK_HEIGHT/2;
+         y_origin -= BLOCK_HEIGHT/2;
+         break;
     default:
         x_origin += BLOCK_WIDTH/2;
 }
