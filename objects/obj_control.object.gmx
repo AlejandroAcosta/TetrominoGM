@@ -78,15 +78,15 @@ if (instance_exists(obj_active_block)) {
             0, level_height,
             level_width, level_height,
             obj_active_block, false, false
-    );
+    ) || false;
 
-    var collided_with_placed_block;
+    var collided_with_placed_block = false;
     with (obj_active_block) {
          collided_with_placed_block = place_meeting(x, y, obj_placed_block);
     }
 
     if (collided_with_bottom || collided_with_placed_block) {
-       scr_place_block(obj_active_block, blocks);
+        scr_place_block(obj_active_block, blocks);
     } 
 }
 </string>

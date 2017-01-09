@@ -22,9 +22,14 @@ with (block) {
        }
     }
     if (control.rotate_key) {
-       if (!scr_check_for_rotated_collision(block)) {
-          image_index += 1;
-       }
+        if (!scr_check_for_rotated_collision(block)) {
+            image_index += 1;
+        }
+    }
+    if (debug_mode && control.delete_active_block) {
+        with (block) {
+            instance_destroy();
+        }
     }
 
 }
