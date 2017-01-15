@@ -16,11 +16,12 @@ for (
             j < min(block_grid_y_pos + 2, LEVEL_HEIGHT);
             j++
         ) {
-        var collided = instance_position(i*BLOCK_WIDTH, (j+1)*BLOCK_HEIGHT, obj_active_block);
+        var collided = position_meeting(i*BLOCK_WIDTH, (j+1)*BLOCK_HEIGHT, block);
 
-        var placed_block = noone
-        if (collided != noone) {
+        var placed_block = noone;
+        if (collided) {
            placed_block = instance_create(i*BLOCK_WIDTH, j*BLOCK_HEIGHT, obj_placed_block);
+           placed_block.image_index = block.selected_sprite_index;
         }
         block_array[i, j] = placed_block;
     }
