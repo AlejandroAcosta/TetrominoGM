@@ -67,13 +67,7 @@ if (!instance_exists(obj_active_block)) {
    }
 }
 else {
-    var collided = scr_check_for_block_collision(obj_active_block, blocks);
-    if (collided) {
-        scr_place_block(obj_active_block, blocks);
-    }
-    else {
-        scr_move_block(self, obj_active_block);
-    }
+    scr_move_block(self, obj_active_block);
 }
 </string>
           </argument>

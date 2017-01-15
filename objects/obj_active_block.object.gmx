@@ -54,8 +54,22 @@ vspeed = 0;
           <argument>
             <kind>1</kind>
             <string>/// Move block down 1 grid space
-y += BLOCK_HEIGHT;
-alarm[0] = room_speed;
+
+if (instance_exists(obj_control)) {
+    y += BLOCK_HEIGHT;
+    var collided = scr_check_for_block_collision(self, obj_control.blocks);
+    if (collided) {
+        y -= BLOCK_HEIGHT;
+        scr_place_block(self, obj_control.blocks);
+    }
+    else {
+        alarm[0] = room_speed;
+    }
+}
+else {
+    alarm[0] = room_speed;
+}
+
 </string>
           </argument>
         </arguments>
