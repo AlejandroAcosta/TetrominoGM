@@ -22,8 +22,9 @@ with (block) {
        }
     }
     if (control.rotate_key) {
-        if (!scr_check_for_rotated_collision(block)) {
-            image_angle += 90;
+        image_angle += 90;
+        if (place_meeting(x, y, obj_wall) || place_meeting(x, y, obj_placed_block)) {
+            image_angle -= 90;
         }
     }
     if (debug_mode && control.delete_active_block) {

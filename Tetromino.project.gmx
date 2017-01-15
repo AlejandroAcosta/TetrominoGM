@@ -27,7 +27,6 @@
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_create_block.gml</script>
     <script>scripts\scr_set_selected_sprite_index.gml</script>
-    <script>scripts\scr_check_for_rotated_collision.gml</script>
     <script>scripts\scr_place_block.gml</script>
     <script>scripts\scr_move_block.gml</script>
   </scripts>
