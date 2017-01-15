@@ -28,6 +28,8 @@
             <string>/// Create the standby block
 event_inherited();
 
+get_next = false;
+
 scr_set_selected_sprite_index();
 </string>
           </argument>
