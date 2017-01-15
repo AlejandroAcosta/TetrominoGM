@@ -1,29 +1,19 @@
-/// scr_place_block(block, block_array)
+/// scr_place_block(block)
 
 var block = argument0;
-var block_array = argument1;
 
 var block_grid_x_pos = floor(block.x / BLOCK_WIDTH);
 var block_grid_y_pos = floor(block.y / BLOCK_HEIGHT);
 
-for (
-        var i = max(block_grid_x_pos - 2, 0);
-        i < min(block_grid_x_pos + 2, (LEVEL_WIDTH+LEFT_WALL));
-        i++
-    ) {
-    for (
-            var j = max(block_grid_y_pos - 2, 0);
-            j < min(block_grid_y_pos + 2, LEVEL_HEIGHT);
-            j++
-        ) {
-        var collided = position_meeting(i*BLOCK_WIDTH, (j+1)*BLOCK_HEIGHT, block);
-
+for ( var i = BLOCK_WIDTH/2; i < (LEVEL_WIDTH+LEFT_WALL)*BLOCK_WIDTH; i += BLOCK_WIDTH ) {
+    for ( var j = BLOCK_HEIGHT/2; j < LEVEL_HEIGHT*BLOCK_HEIGHT; j += BLOCK_HEIGHT ) {
+        var collided = position_meeting(i, j, block);
         var placed_block = noone;
         if (collided) {
-           placed_block = instance_create(i*BLOCK_WIDTH, j*BLOCK_HEIGHT, obj_placed_block);
+           placed_block = instance_create(i - BLOCK_WIDTH/2, j - BLOCK_HEIGHT/2, obj_placed_block);
+
            placed_block.image_index = block.selected_sprite_index;
         }
-        block_array[i, j] = placed_block;
     }
 }
 

@@ -29,12 +29,6 @@
 
 scr_get_input();
 
-// Initialize block positions
-for( var i = LEVEL_WIDTH-1; i &gt;= 0; i--) {
-     for (var j = LEVEL_HEIGHT-1; j &gt;= 0; j--) {
-         blocks[i, j] = noone;
-     }
-}
 </string>
           </argument>
         </arguments>

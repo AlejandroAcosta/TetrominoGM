@@ -1,7 +1,6 @@
-/// scr_check_for_block_collision(block, block_grid)
+/// scr_check_for_block_collision(block)
 
 var block = argument0;
-var block_grid = argument1;
 
 var level_height = LEVEL_HEIGHT * BLOCK_HEIGHT;
 var level_width = LEVEL_WIDTH * BLOCK_WIDTH;

@@ -57,10 +57,10 @@ vspeed = 0;
 
 if (instance_exists(obj_control)) {
     y += BLOCK_HEIGHT;
-    var collided = scr_check_for_block_collision(self, obj_control.blocks);
+    var collided = scr_check_for_block_collision(self);
     if (collided) {
         y -= BLOCK_HEIGHT;
-        scr_place_block(self, obj_control.blocks);
+        scr_place_block(self);
     }
     else {
         alarm[0] = room_speed;
