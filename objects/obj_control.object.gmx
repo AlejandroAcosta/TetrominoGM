@@ -66,28 +66,14 @@ if (!instance_exists(obj_active_block)) {
         get_next = true;
    }
 }
-
-if (instance_exists(obj_active_block)) {
-    scr_move_block(self, obj_active_block);
-
-    // Check if we've reached the bottom of the map
-    var level_height = LEVEL_HEIGHT * BLOCK_HEIGHT;
-    var level_width = LEVEL_WIDTH * BLOCK_WIDTH;
-
-    var collided_with_bottom = collision_line(
-            0, level_height,
-            level_width, level_height,
-            obj_active_block, false, false
-    ) || false;
-
-    var collided_with_placed_block = false;
-    with (obj_active_block) {
-         collided_with_placed_block = place_meeting(x, y, obj_placed_block);
-    }
-
-    if (collided_with_bottom || collided_with_placed_block) {
+else {
+    var collided = scr_check_for_block_collision(obj_active_block, blocks);
+    if (collided) {
         scr_place_block(obj_active_block, blocks);
-    } 
+    }
+    else {
+        scr_move_block(self, obj_active_block);
+    }
 }
 </string>
           </argument>
