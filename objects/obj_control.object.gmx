@@ -68,6 +68,40 @@ else {
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw debug information
+
+if (debug_mode) {
+    with (obj_active_block) {
+        draw_text(64, 0, "x position is: " + string(x));
+        draw_text(64, 16, "y position is: " + string(y));
+        draw_text(64, 32, "bbox top is: " + string(bbox_top));
+        draw_text(64, 48, "bbox left is: " + string(bbox_left));
+        draw_text(64, 64, "bbox right is: " + string(bbox_right));
+        draw_text(64, 80, "bbox bottom is: " + string(bbox_bottom));
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
