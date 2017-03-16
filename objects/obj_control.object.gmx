@@ -28,6 +28,7 @@
             <string>/// Instantiate control object
 
 scr_get_input();
+state = "MOVE";
 
 </string>
           </argument>
@@ -56,12 +57,18 @@ scr_get_input();
 
 if (!instance_exists(obj_active_block)) {
    with (obj_standby_block) {
-        var block = scr_create_block(selected_sprite_index, sprite_index);
+        scr_create_block(selected_sprite_index, sprite_index);
         get_next = true;
    }
 }
-else {
-    scr_move_block(self, obj_active_block);
+switch(state) {
+    case "MOVE":
+        scr_move_block(self, obj_active_block);
+        break;
+    case "LINE CHECK":
+        scr_check_lines(self);
+        state = "MOVE";
+        break;
 }
 </string>
           </argument>
@@ -95,6 +102,7 @@ if (debug_mode) {
         draw_text(64, 48, "bbox left is: " + string(bbox_left));
         draw_text(64, 64, "bbox right is: " + string(bbox_right));
         draw_text(64, 80, "bbox bottom is: " + string(bbox_bottom));
+        draw_text(64, 96, "line check begins at: " + string(BLOCK_WIDTH * (0.5+LEFT_WALL)));
     }
 }
 </string>
