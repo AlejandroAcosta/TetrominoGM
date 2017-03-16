@@ -30,6 +30,9 @@
 scr_get_input();
 state = "MOVE";
 
+if (debug_mode) {
+    object_set_visible(obj_block_destroyer, true);
+}
 </string>
           </argument>
         </arguments>

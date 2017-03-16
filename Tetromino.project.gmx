@@ -44,7 +44,13 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
-    <room>rooms\rm_test_line_clear</room>
+    <rooms name="tests">
+      <room>rooms\rm_test_line_clear</room>
+      <room>rooms\rm_test_line_check</room>
+      <room>rooms\rm_test_two_clear</room>
+      <room>rooms\rm_test_three_clear</room>
+      <room>rooms\rm_test_four_clear</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
