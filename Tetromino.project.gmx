@@ -34,13 +34,15 @@
     <script>scripts\scr_check_lines.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_solid</object>
-    <object>objects\obj_active_block</object>
-    <object>objects\obj_standby_block</object>
     <object>objects\obj_control</object>
-    <object>objects\obj_placed_block</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_block_destroyer</object>
+    <objects name="blocks">
+      <object>objects\obj_solid</object>
+      <object>objects\obj_standby_block</object>
+      <object>objects\obj_active_block</object>
+      <object>objects\obj_placed_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
