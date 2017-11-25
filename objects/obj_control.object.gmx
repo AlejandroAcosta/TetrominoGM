@@ -72,6 +72,8 @@ switch(state) {
         scr_check_lines(self);
         state = "MOVE";
         break;
+    case "LINE CLEAR":
+        break;
 }
 </string>
           </argument>

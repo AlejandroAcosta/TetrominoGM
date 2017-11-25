@@ -28,7 +28,6 @@
             <string>/// Initialize array of block positions
 
 event_inherited();
-
 </string>
           </argument>
         </arguments>
