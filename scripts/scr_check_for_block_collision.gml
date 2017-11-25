@@ -4,10 +4,11 @@ var block = argument0;
 
 var level_height = LEVEL_HEIGHT * BLOCK_HEIGHT;
 var level_width = LEVEL_WIDTH * BLOCK_WIDTH;
+var left_wall = LEFT_WALL * BLOCK_WIDTH;
 
 var collided_with_bottom = collision_line(
     0, level_height,
-    level_width, level_height,
+    level_width + left_wall, level_height,
     block, false, false
 ) || false;
 
