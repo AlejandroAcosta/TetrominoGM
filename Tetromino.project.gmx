@@ -33,6 +33,9 @@
     <script>scripts\scr_check_for_block_collision.gml</script>
     <script>scripts\scr_check_lines.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_game</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_control</object>
     <object>objects\obj_wall</object>

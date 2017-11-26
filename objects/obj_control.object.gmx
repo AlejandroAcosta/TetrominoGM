@@ -29,6 +29,9 @@
 
 scr_get_input();
 state = "MOVE";
+score = 0;
+lines = 0;
+level = 1;
 
 if (debug_mode) {
     object_set_visible(obj_block_destroyer, true);
@@ -99,7 +102,40 @@ switch(state) {
             <kind>1</kind>
             <string>/// Draw debug information
 
+draw_set_font(fnt_game);
+draw_set_color(c_black);
+
+var x_score_pos = 15 * BLOCK_WIDTH;
+var y_score_pos = 0.9 * BLOCK_HEIGHT;
+
+draw_set_halign(fa_left);
+draw_text(x_score_pos, y_score_pos, ' S C O R E');
+
+draw_set_halign(fa_right);
+draw_text(x_score_pos + 4.8*BLOCK_WIDTH, y_score_pos + 2*BLOCK_HEIGHT, string(score));
+
+var x_level_pos = 15.1 * BLOCK_WIDTH;
+var y_level_pos = 4.9 * BLOCK_HEIGHT;
+
+draw_set_halign(fa_left);
+draw_text(x_level_pos, y_level_pos, ' L E V E L');
+
+draw_set_halign(fa_right);
+draw_text(x_level_pos + 4.7 * BLOCK_WIDTH, y_level_pos + BLOCK_HEIGHT, string(level));
+
+var x_line_pos = 15.2 * BLOCK_WIDTH;
+var y_line_pos = 8.9 * BLOCK_HEIGHT;
+
+draw_set_halign(fa_left);
+draw_text(x_line_pos, y_line_pos, ' L I N E S');
+
+draw_set_halign(fa_right);
+draw_text(x_line_pos + 4.5 * BLOCK_WIDTH, y_line_pos + BLOCK_HEIGHT, string(lines));
+
 if (debug_mode) {
+    draw_set_font(noone);
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
     with (obj_active_block) {
         draw_text(64, 0, "x position is: " + string(x));
         draw_text(64, 16, "y position is: " + string(y));
