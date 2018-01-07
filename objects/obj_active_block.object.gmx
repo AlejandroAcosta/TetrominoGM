@@ -28,7 +28,7 @@
             <string>/// Create the active game block
 
 event_inherited();
-alarm[0] = room_speed;
+alarm[0] = obj_control.block_speed;
 
 vspeed = 0;
 </string>
@@ -64,11 +64,11 @@ if (instance_exists(obj_control)) {
         obj_control.state = "LINE CHECK";
     }
     else {
-        alarm[0] = room_speed;
+        alarm[0] = obj_control.block_speed;
     }
 }
 else {
-    alarm[0] = room_speed;
+    alarm[0] = obj_control.block_speed;
 }
 
 </string>

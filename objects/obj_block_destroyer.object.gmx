@@ -60,6 +60,10 @@ with (obj_placed_block) {
     }
 }
 
+with (obj_control) {
+    lines += 1;
+}
+
 instance_destroy()
 </string>
           </argument>

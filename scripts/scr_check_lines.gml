@@ -2,6 +2,8 @@
 
 var control = argument0;
 
+var cleared_line = false;
+
 for (var j = BLOCK_HEIGHT/2; j< LEVEL_HEIGHT*BLOCK_HEIGHT; j+= BLOCK_HEIGHT) {
     var row_is_full = true;
     var blocks;
@@ -25,9 +27,12 @@ for (var j = BLOCK_HEIGHT/2; j< LEVEL_HEIGHT*BLOCK_HEIGHT; j+= BLOCK_HEIGHT) {
     }
 
     if (row_is_full) {
+        cleared_line = true;
         var destroyer = instance_create(LEFT_WALL*BLOCK_WIDTH, y_grid * BLOCK_HEIGHT, obj_block_destroyer);
         with (destroyer) {
             image_xscale *= LEVEL_WIDTH;
         }
     }
 }
+
+return cleared_line;

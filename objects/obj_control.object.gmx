@@ -33,6 +33,9 @@ score = 0;
 lines = 0;
 level = 1;
 
+last_lines = 0;
+block_speed = room_speed;
+
 if (debug_mode) {
     object_set_visible(obj_block_destroyer, true);
 }
@@ -67,15 +70,46 @@ if (!instance_exists(obj_active_block)) {
         get_next = true;
    }
 }
+
 switch(state) {
     case "MOVE":
         scr_move_block(self, obj_active_block);
         break;
     case "LINE CHECK":
-        scr_check_lines(self);
-        state = "MOVE";
+        var line_cleared = scr_check_lines(self);
+        if (line_cleared) {
+            state = "LINE CLEAR";
+        }
+        else {
+            state = "MOVE";
+        }
         break;
     case "LINE CLEAR":
+        var lines_cleared = lines - last_lines;
+        score += 100 * lines_cleared * level;
+
+        last_lines = lines;
+
+        var level_up = lines / 10 &gt;= level;
+        if (level_up) {
+            state = "LEVEL UP";
+        }
+        else {
+            state = "MOVE";
+        }
+        break;
+    case "LEVEL UP":
+        level += 1;
+        var prev_block_speed = block_speed;
+        var speed_change = floor( prev_block_speed / 3);
+        block_speed -= speed_change;
+
+        if (block_speed &lt; 1) {
+            block_speed = 1;
+        }
+
+        state = "MOVE";
+
         break;
 }
 </string>

@@ -22,4 +22,16 @@ if (debug_mode) {
     if (keyboard_check_pressed(vk_f5)) {
         room_goto(rm_test_four_clear);
     }
+    if (keyboard_check_pressed(vk_add)) {
+        if (keyboard_check(vk_shift)) {
+            obj_control.lines += 10;
+        }
+        else {
+            obj_control.lines += 1;
+        }
+        obj_control.state = "LINE CLEAR";
+    }
+    if (keyboard_check_pressed(vk_subtract)) {
+        obj_control.lines -= 1;
+    }
 }
